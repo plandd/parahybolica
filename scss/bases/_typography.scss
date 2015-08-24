@@ -1,0 +1,74 @@
+// SIZES
+// ----------------------------------------------------------------------------
+.font-small {
+	font-size: rem-calc(12);
+}
+.font-medium {
+	font-size: rem-calc(14);
+}
+.font-normal {
+	font-size: rem-calc(16);
+}
+
+// LINE-HEIGHTS
+// ----------------------------------------------------------------------------
+.lh-1 {
+	line-height: 1;
+}
+.lh-0 {
+	line-height: 0;
+}
+.lh-12 {
+	line-height: 1.2;
+}
+
+// WEIGHTS
+// ----------------------------------------------------------------------------
+.font-regular {
+	font-family: 'ProximaNova-Regular';
+}
+.font-bold {
+	font-family: 'ProximaNova-Bold';
+}
+.font-black {
+	font-family: 'ProximaNova-Black';
+}
+.font-light {
+	font-family: 'ProximaNova-Light';
+}
+.font-extra {
+	font-family: 'ProximaNova-Extrabld';
+}
+
+// TRANSFORMS
+// ----------------------------------------------------------------------------
+.text-up {
+	text-transform: uppercase;
+}
+.text-low {
+	text-transform: lowercase;
+}
+
+// COLORS
+// ----------------------------------------------------------------------------
+.primary {
+	color: $primary-color;
+}
+.secondary {
+	color: $secondary-color;
+}
+.white {
+	color: $white;
+}
+.jet {
+	color: $jet;
+}
+.marine {
+	color: $marine;
+}
+.less-opacity {
+	@extend %transition;
+	&:hover {
+		opacity: .8;
+	}
+}

@@ -1,0 +1,50 @@
+// Cabeçalho
+// ----------------------------------------------------------------------------
+#top-bar {
+	> .row {
+		height: rem-calc(90);
+	}
+	@extend .bg-secondary;
+}
+
+//menu principal
+#main-menu {
+	a {
+		@extend .white;
+		@extend .font-black;
+		@extend .text-up;
+		@extend .font-medium;
+		&:hover {
+			@extend .primary;
+		}
+	}
+	ul {
+		line-height: rem-calc(60);
+	}
+}
+.icon-menu {
+	line-height: rem-calc(40);
+	font-size: rem-calc(32);
+	@extend .white;
+}
+
+//Cabeçalho de páginas
+.page-header {
+	height: rem-calc(414);
+}
+
+// Media Queries
+// ----------------------------------------------------------------------------
+@media #{$small-only} {
+	.row {
+		max-width: none;
+		width: rem-calc(320);
+	}
+}
+
+@media #{$medium-only} {
+	.row {
+		max-width: none;
+		width: rem-calc(768);
+	}
+}

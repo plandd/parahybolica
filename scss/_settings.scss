@@ -95,7 +95,7 @@ $include-html-global-classes: $include-html-classes;
 // $font-weight-normal: normal;
 // $font-weight-bold: bold;
 
-// $white       : #FFFFFF;
+ $white       : #FFFFFF;
 // $ghost       : #FAFAFA;
 // $snow        : #F9F9F9;
 // $vapor       : #F6F6F6;
@@ -112,21 +112,22 @@ $include-html-global-classes: $include-html-classes;
 // $charcoal    : #555555;
 // $tuatara     : #444444;
 // $oil         : #333333;
-// $jet         : #222222;
+ $jet         : #0a0808;
 // $black       : #000000;
+$marine: #091323;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
+ $primary-color: #f2c65a;
+ $secondary-color: #1988a4;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
-// $body-bg: $white;
-// $body-font-color: $jet;
-// $body-font-family: $font-family-sans-serif;
+ $body-bg: $white;
+ $body-font-color: #747a7f;
+ $body-font-family: 'ProximaNova-Regular';
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -151,36 +152,36 @@ $include-html-global-classes: $include-html-classes;
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $small-breakpoint:  em-calc(640);
-// $medium-breakpoint: em-calc(1024);
-// $large-breakpoint:  em-calc(1440);
-// $xlarge-breakpoint: em-calc(1920);
+ $small-breakpoint:  em-calc(767);
+ $medium-breakpoint: em-calc(1024);
+ $large-breakpoint:  em-calc(1440);
+ $xlarge-breakpoint: em-calc(1920);
 
-// $small-range:   (0, $small-breakpoint);
-// $medium-range:  ($small-breakpoint  + em-calc(1), $medium-breakpoint);
-// $large-range:   ($medium-breakpoint + em-calc(1), $large-breakpoint);
-// $xlarge-range:  ($large-breakpoint  + em-calc(1), $xlarge-breakpoint);
-// $xxlarge-range: ($xlarge-breakpoint + em-calc(1), em-calc(99999999));
+ $small-range:   (0, $small-breakpoint);
+ $medium-range:  ($small-breakpoint  + em-calc(1), $medium-breakpoint);
+ $large-range:   ($medium-breakpoint + em-calc(1), $large-breakpoint);
+ $xlarge-range:  ($large-breakpoint  + em-calc(1), $xlarge-breakpoint);
+ $xxlarge-range: ($xlarge-breakpoint + em-calc(1), em-calc(99999999));
 
-// $screen: "only screen";
+ $screen: "only screen";
 
-// $landscape: "#{$screen} and (orientation: landscape)";
-// $portrait: "#{$screen} and (orientation: portrait)";
+ $landscape: "#{$screen} and (orientation: landscape)";
+ $portrait: "#{$screen} and (orientation: portrait)";
 
-// $small-up: $screen;
-// $small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})";
+ $small-up: $screen;
+ $small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})";
 
-// $medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})";
-// $medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})";
+ $medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})";
+ $medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})";
 
-// $large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})";
-// $large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})";
+ $large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})";
+ $large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})";
 
-// $xlarge-up: "#{$screen} and (min-width:#{lower-bound($xlarge-range)})";
-// $xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})";
+ $xlarge-up: "#{$screen} and (min-width:#{lower-bound($xlarge-range)})";
+ $xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})";
 
-// $xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";
-// $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})";
+ $xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";
+ $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})";
 
 // $retina: (
 //  "#{$screen} and (-webkit-min-device-pixel-ratio: 2)",
@@ -192,9 +193,9 @@ $include-html-global-classes: $include-html-classes;
 // );
 
 // Legacy
-// $small: $medium-up;
-// $medium: $medium-up;
-// $large: $large-up;
+ $small: $medium-up;
+ $medium: $medium-up;
+ $large: $large-up;
 
 // We use this as cursors values for enabling the option of having custom cursors in the whole site's stylesheet
 // $cursor-crosshair-value: crosshair;
@@ -210,13 +211,13 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-// $header-font-family: $body-font-family;
+ $header-font-family: 'ProximaNova-Bold';
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-// $header-font-color: $jet;
-// $header-line-height: 1.4;
-// $header-top-margin: .2rem;
-// $header-bottom-margin: .5rem;
+ $header-font-color: $body-font-color;
+// $header-line-height: rem-calc(36);
+ $header-top-margin: 0;
+ $header-bottom-margin: 0;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
@@ -249,8 +250,8 @@ $include-html-global-classes: $include-html-classes;
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: $font-weight-normal;
-// $paragraph-font-size: 1rem;
-// $paragraph-line-height: 1.6;
+ $paragraph-font-size: rem-calc(18);
+ $paragraph-line-height: rem-calc(30);
 // $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);
 // $paragraph-aside-line-height: 1.35;
@@ -449,7 +450,7 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to control button text styles.
 // $button-font-family: $body-font-family;
-// $button-font-color: $white;
+ $button-font-color: $jet;
 // $button-font-color-alt: $oil;
 // $button-font-tny: rem-calc(11);
 // $button-font-sml: rem-calc(13);
@@ -647,16 +648,16 @@ $include-html-global-classes: $include-html-classes;
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
 // $input-font-size: rem-calc(14);
-// $input-bg-color: $white;
-// $input-focus-bg-color: scale-color($white, $lightness: -2%);
-// $input-border-color: scale-color($white, $lightness: -20%);
-// $input-focus-border-color: scale-color($white, $lightness: -40%);
+ $input-bg-color: #f5f7f9;
+ $input-focus-bg-color: scale-color($input-bg-color, $lightness: -2%);
+ $input-border-color: transparent;
+ $input-focus-border-color: scale-color($white, $lightness: -40%);
 // $input-border-style: solid;
-// $input-border-width: 1px;
+ $input-border-width: 0px;
 // $input-border-radius: $global-radius;
 // $input-disabled-bg: $gainsboro;
 // $input-disabled-cursor: $cursor-default-value;
-// $input-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+ $input-box-shadow: inset 0 1px 2px transparent;
 // $input-include-glowing-effect: false;
 
 // We use these to style the fieldset border and spacing.

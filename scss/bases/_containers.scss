@@ -1,0 +1,36 @@
+// BACKGROUNDS
+// ----------------------------------------------------------------------------
+.bg-primary {
+	background-color: $primary-color;
+}
+.bg-secondary {
+	background-color: $secondary-color;
+}
+.bg-white {
+	background-color: $white;
+}
+.bg-jet {
+	background-color: $jet;
+}
+.bg-marine {
+	background-color: $marine;
+}
+
+// DISPLAYS
+// ----------------------------------------------------------------------------
+.d-block {
+	display: block;
+}
+.d-table {
+	display: table;
+}
+.d-table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+// MARGINS
+// ----------------------------------------------------------------------------
+.no-margin {
+	margin: 0 !important;
+}
